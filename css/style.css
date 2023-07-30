@@ -984,3 +984,26 @@ h6,
     margin-bottom: 0;
     text-align: left;
   }
+
+  .active1{background:black;color:white}
+.inactive2{background:white}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equalsize{
+    width:150px;
+    height:200px;
+    padding:20px;
+    
+    
+    }

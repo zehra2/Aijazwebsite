@@ -31,6 +31,106 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!----------------------------->
+  <style>
+#myImg {
+
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */;
+overflow: hidden;
+z-index: 1; /* Sit on top */
+margin-top:50px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+overflow: hidden;
+    position: fixed;
+}
+
+/* Modal Content (image) */
+.modal-content {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+-webkit-animation-name: zoom;
+-webkit-animation-duration: 0.6s;
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+from {-webkit-transform:scale(0)} 
+to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+from {transform:scale(0)} 
+to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+.modal-content {
+  width: 100%;
+}
+}
+
+
+   
+      
+      </style>
+
+<!------ Include the above in your HEAD tag ---------->
 </head>
 
 <body>
@@ -63,6 +163,7 @@
         </div>
     </div>
     <!-- Topbar End -->
+
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light  sticky-top py-0 pe-5">
@@ -115,142 +216,168 @@
     </nav>
     <!-- Navbar End -->
 
+
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <h1 class="display-3 text-white animated slideInRight">Handling Equipment</h1>
+            <h1 class="display-3 text-white animated slideInRight">Projects</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb animated slideInRight mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Shopfitting</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Handling Equipment</li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Projects</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
-<!----------shopfitting intro---------------->
- <!-- Contact Start -->
- <div class="container-xxl py-5">
+
+
+    <!-- Project Start -->
     <div class="container">
-       
-        <div class="row g-5">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <p class="fw-medium text-uppercase text-primary mb-2">Handling Equipment</p>
-                <h1 class="display-5 mb-4">Explore our custom floor displays</h1>
-                <p class="mb-4">Aijaz and Sons a smart move and increase your brand exposure with corrugated floor displays. PakFactory provides expertly crafted solutions with quality materials for your business needs.</a>.</p>
-                <div class="row g-4">
-                    <div class="col-6">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle">
-                                <i class="fa fa-phone-alt text-white"></i>
-                            </div>
-                            <div class="ms-3">
-                                <h6>Call Us</h6>
-                                <span>+012 345 67890</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle">
-                                <i class="fa fa-envelope text-white"></i>
-                            </div>
-                            <div class="ms-3">
-                                <h6>Mail Us</h6>
-                                <span>info@example.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s" >
-                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-                 
-                    <img class="img-fluid" src="images/3d/shopfitting-customized.jpg" alt="">
+        <div class="row">
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="fw-medium text-uppercase text-primary mb-2">Industrial Portfolio</p>
+                <h1 class="display-5 mb-5">See What We Have Completed Recently </h1>
                 
-                </div>
-
-
-
             </div>
+
+        <div align="center">
+            <button class="btn1 inactive2 btn-default filter-button" data-filter="all">All</button>
+            <button class="btn1 inactive2 btn-default filter-button" data-filter="hdpe">Abdullah brothers</button>
+            <button class="btn1  inactive2 btn-default filter-button" data-filter="sprinkle">Gul Ahmed Textile</button>
+            <button class="btn1  inactive2 btn-default filter-button" data-filter="spray">HappyHome school WareHouse</button>
+            <button class="btn1  inactive2  btn-default filter-button" data-filter="irrigation">YKK Textile Ltd </button>
+            <button class="btn1  inactive2 btn-default filter-button" data-filter="spring">Younus textile Ltd</button>
         </div>
-    </div>
-</div>
-<!-- Contact End -->
-<!------------------------------------------->
+        <br/>
 
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
 
+
+            
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img id="modal-img" class="modal-content"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS2ol73JZj6-IqypxPZXYS3rRiPwKteoD8vezk9QsRdkjt3jEn&usqp=CAU">
+                  
+                
+                <div id="caption"></div>
+              </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img id="myImg" src="images/industrial/gul ahmed textile (pvt) ltd (1).jpeg" class="img-fluid">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img id="myImg" src="images/industrial/gul ahmed textile (pvt) ltd (2).jpeg" class="img-fluid">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img id="myImg" src="images/industrial/gul ahmed textile (pvt) ltd (3).jpeg" class="img-fluid">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img id="myImg" src="images/industrial/abdullah brothers (1).jpeg" class="img-fluid">
+               
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img id="myImg" src="images/industrial/abdullah brothers (2).jpeg" class="img-fluid">
+               
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img id="myImg" src="images/industrial/abdullah brothers (3).jpeg" class="img-fluid">
+               
+            </div>
+            
+            
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img id="myImg" src="images/industrial/happy home school's warehouse (1).jpeg" class="img-fluid">
+               
+            </div>
+
+            
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img id="myImg" src="images/industrial/happy home school's warehouse (2).jpeg" class="img-fluid">
+               
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img id="myImg" src="images/industrial/ykk (pvt) ltd (2).jpeg" class="img-fluid">
+                
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img id="myImg" src="images/industrial/ykk (pvt) ltd (1).jpeg" class="img-fluid">
+              
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img id="myImg" src="images/industrial/ykk (pvt) ltd (3).jpeg" class="img-fluid">
+              
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img id="myImg" src="images/industrial/ykk (pvt) ltd (3).jpeg" class="img-fluid">
+              
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img id="myImg" src="images/industrial/ykk (pvt) ltd (4).jpeg" class="img-fluid">
+              
+            </div>
            
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">List Of Products</p>
-                <h1 class="display-5 mb-5">Display cases</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item text-center">
-                        <img class="img-fluid " src="images/Shopfitting/ShopCases/Counter Standard.png" alt="">
-                        <div class="d-flex mt-5">
-                           
-                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 "
-                                style="height: 90px;">
-                                <div class="col-md border border-secondary">
-                                   <p>Product#<span>  Counter: Standard  </span></p>
-                                  </div>
-                                  <div class="col-md border border-secondary">
-                                    <p>Discription#<span>  (Complete with Glass & Fittings) </span></p>
-                                  </div>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item text-center">
-                        <img class="img-fluid img-responsive center-block" src="images/Shopfitting/ShopCases/Wallunit.png" alt="">
-                        <div class="d-flex mt-5">
-                           
-                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100"
-                                style="height: 90px;">
-                               
-                                <div class="col-md border border-secondary">
-                                    <p>Product#<span>Wall Unit  </span></p></div>
-                                    <div class="col-md border border-secondary">
-                                        <p>Discription#<span>   (Complete with Glass & Fittings)   </span></p>
-                                    </div>
-                                   
-                                  
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              
-              
-               
-              
-               
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img id="myImg" src="images/industrial/happy home school's warehouse (3).jpeg" class="img-fluid">
                 
-
-                
-
-              
-
-              
-
-
-               
             </div>
+
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spring">
+                <img id="myImg" src="images/industrial/yonus textile (pvt) ltd (1).jpeg" class="img-fluid">
+                
+            </div>
+
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spring">
+                <img id="myImg" src="images/industrial/yonus textile (pvt) ltd (2).jpeg" class="img-fluid">
+                
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spring">
+                <img id="myImg" src="images/industrial/yonus textile (pvt) ltd (3).jpeg" class="img-fluid">
+                
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img id="myImg" src="images/industrial/happy home school's warehouse (4).jpeg" class="img-fluid">
+              
+            </div>
+            
+          
+            
+            
         </div>
     </div>
-    <!-- Team End -->
+    <!----------------------->
+   
+    <!-- Project End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+       <!-- Footer Start -->
+       <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
@@ -331,6 +458,69 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>$(document).ready(function(){
+
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+            
+            if(value == "all")
+            {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            }
+            else
+            {
+    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');
+                
+            }
+        });
+        
+        if ($(".filter-button").removeClass("active")) {
+    $(this).removeClass("active");
+    }
+    $(this).addClass("active");
+    
+    });
+   
+        </script>
+        <script>
+            var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+// var img = document.getElementById("myImg");
+var modalImg = document.getElementById("modal-img");
+var captionText = document.getElementById("caption");
+// img.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
+
+
+document.addEventListener("click", (e) => {
+  const elem = e.target;
+  if (elem.id==="myImg") {
+    modal.style.display = "block";
+    modalImg.src = elem.dataset.biggerSrc || elem.src;
+    captionText.innerHTML = elem.alt; 
+    $('body').css('overflow', 'hidden');
+   
+  }
+})
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+ 
+}
+
+        </script>
 </body>
 
 </html>

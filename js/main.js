@@ -117,4 +117,21 @@
 
     
 })(jQuery);
+$(document).ready(function(){
+    $('.btn1').click(function(){
+      $('.btn1').removeClass('active1').addClass('inactive2');
+       $(this).removeClass('inactive2').addClass('active1');
+      });
+  })
+
+
+
+
+
+
+
+
+
+
+  
 
